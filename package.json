@@ -9,8 +9,6 @@
     "react": "17.0.2",
     "react-datetime": "3.0.4",
     "react-dom": "17.0.2",
-    "react-router": "5.2.0",
-    "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
     "reactstrap": "8.9.0"
   },
@@ -80,5 +78,5 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/paper-kit-react/issues"
   },
-  "homepage": "https://demos.creative-tim.com/paper-kit-react/#/index"
+  "homepage": "/"
 }

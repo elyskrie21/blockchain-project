@@ -17,7 +17,6 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 
@@ -30,7 +29,6 @@ import {
   NavLink,
   Nav,
   Container,
-  Button,
 } from "reactstrap";
 
 function ExamplesNavbar() {
@@ -75,7 +73,6 @@ function ExamplesNavbar() {
             data-placement="bottom"
             to="/index"
             target="_blank"
-            tag={Link}
           >
             Elyse Kriegel
           </NavbarBrand>

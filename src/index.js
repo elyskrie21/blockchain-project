@@ -25,7 +25,7 @@ import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
 // pages
-import ProfilePage from "views/ProfilePage.js";
+//import ProfilePage from "views/ProfilePage.js";
 import Index from "views/index"; 
 // others
 
@@ -33,10 +33,10 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route
+      {/* <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
-      />
+      /> */}
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,

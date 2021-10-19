@@ -150,9 +150,9 @@ function Index() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        <div className="section bg-info text-center">
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h2 className="title">Uses of blockchain technology</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
@@ -161,7 +161,7 @@ function Index() {
                       <img
                         alt="..."
                         src={
-                          require("assets/img/faces/clem-onojeghuo-3.jpg")
+                          require("assets/img/cryptocoin.bmp")
                             .default
                         }
                       />
@@ -170,8 +170,8 @@ function Index() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
+                        <CardTitle tag="h4">Cryptocurreny</CardTitle>
+                        <h6 className="card-category">Bitcoin, Ether, DaiCoin, Etc.</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -215,7 +215,7 @@ function Index() {
                       <img
                         alt="..."
                         src={
-                          require("assets/img/faces/joe-gardner-2.jpg").default
+                          require("assets/img/trade.bmp").default
                         }
                       />
                     </a>
@@ -223,8 +223,8 @@ function Index() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
+                        <CardTitle tag="h4">Decentralized Finance</CardTitle>
+                        <h6 className="card-category">Banking, Etc.</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -269,7 +269,7 @@ function Index() {
                       <img
                         alt="..."
                         src={
-                          require("assets/img/faces/erik-lucatero-2.jpg")
+                          require("assets/img/supplychain.bmp")
                             .default
                         }
                       />
@@ -278,8 +278,8 @@ function Index() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
+                        <CardTitle tag="h4">Supply Chain</CardTitle>
+                        <h6 className="card-category">Connecting suppliers worldwide</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -324,7 +324,7 @@ function Index() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <h2 className="text-center">How does blockchain work?</h2>
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
@@ -364,6 +364,24 @@ function Index() {
                     </Col>
                   </Row>
                 </Form>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section bg-info landing-section">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="text-center">History of the blockchain</h2>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section landing-section">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="text-center">Real Examples (created by me)</h2>
               </Col>
             </Row>
           </Container>

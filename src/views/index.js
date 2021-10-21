@@ -25,14 +25,12 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
+  CardSubtitle,
+  CardText,
+  CardLink,
 } from "reactstrap";
 
 // core components
@@ -160,10 +158,7 @@ function Index() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={
-                          require("assets/img/cryptocoin.bmp")
-                            .default
-                        }
+                        src={require("assets/img/cryptocoin.bmp").default}
                       />
                     </a>
                   </div>
@@ -171,7 +166,9 @@ function Index() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Cryptocurreny</CardTitle>
-                        <h6 className="card-category">Bitcoin, Ether, DaiCoin, Etc.</h6>
+                        <h6 className="card-category">
+                          Bitcoin, Ether, DaiCoin, Etc.
+                        </h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -214,9 +211,7 @@ function Index() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={
-                          require("assets/img/trade.bmp").default
-                        }
+                        src={require("assets/img/trade.bmp").default}
                       />
                     </a>
                   </div>
@@ -268,10 +263,7 @@ function Index() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={
-                          require("assets/img/supplychain.bmp")
-                            .default
-                        }
+                        src={require("assets/img/supplychain.bmp").default}
                       />
                     </a>
                   </div>
@@ -279,7 +271,9 @@ function Index() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Supply Chain</CardTitle>
-                        <h6 className="card-category">Connecting suppliers worldwide</h6>
+                        <h6 className="card-category">
+                          Connecting suppliers worldwide
+                        </h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -325,45 +319,63 @@ function Index() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">How does blockchain work?</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Name</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
+                <br />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">
+                <div>
+                  <Card className='section-gray'>
+                    <CardBody>
+                      <CardTitle>Card title</CardTitle>
+                      <CardSubtitle className="mb-2 text-muted">
+                        Card subtitle
+                      </CardSubtitle>
+                      <CardText>
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </CardText>
+                      <CardLink href="/#/">Card link</CardLink>
+                      <CardLink href="/#/">Another link</CardLink>
+                    </CardBody>
+                  </Card>
+                </div>
+              </Col>
+              <Col md="4">
+                <div>
+                  <Card className="section-gray">
+                    <CardBody>
+                      <CardTitle>Card title</CardTitle>
+                      <CardSubtitle className="mb-2 text-muted">
+                        Card subtitle
+                      </CardSubtitle>
+                      <CardText>
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </CardText>
+                      <CardLink href="/#/">Card link</CardLink>
+                      <CardLink href="/#/">Another link</CardLink>
+                    </CardBody>
+                  </Card>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="info">
+                  <Card className='section-gray'>
+                    <CardBody>
+                      <CardTitle>Card title</CardTitle>
+                      <CardSubtitle className="mb-2 text-muted">
+                        Card subtitle
+                      </CardSubtitle>
+                      <CardText>
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </CardText>
+                      <CardLink href="/#/">Card link</CardLink>
+                      <CardLink href="/#/">Another link</CardLink>
+                    </CardBody>
+                  </Card>
+                </div>
               </Col>
             </Row>
           </Container>

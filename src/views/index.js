@@ -28,10 +28,18 @@ import {
   Container,
   Row,
   Col,
-  CardSubtitle,
   CardText,
-  CardLink,
 } from "reactstrap";
+
+// Fontawesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faNetworkWired,
+  faFileContract,
+  faAddressBook,
+  faCube,
+  faCubes,
+} from "@fortawesome/free-solid-svg-icons";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -51,17 +59,20 @@ function Index() {
       <ExamplesNavbar />
       <LandingPageHeader />
       <div className="main">
-        <div className="section text-center">
+        <div className="section text-center" id="what">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">What is blockchain technology?</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                <h2 className="title font-weight-bold">
+                  What is blockchain technology?
+                </h2>
+                <h5>
+                  The blockchain is simply a public, immutable ledger that is
+                  used fo;r processing, tracking, and managing assets. This
+                  assets can be digital (music, pictures, copyrights, etc.), or
+                  than can be physical (houses, cars, clothes, etc.). This
+                  public ledger is highly secure due to it being immutable and
+                  the use of advanced cryptography.
                 </h5>
                 <br />
                 <Button
@@ -70,326 +81,260 @@ function Index() {
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  See Details
+                  Key aspects of the blockchain
                 </Button>
               </Col>
             </Row>
             <br />
             <br />
             <Row>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
+                    <FontAwesomeIcon icon={faNetworkWired}></FontAwesomeIcon>
                   </div>
-                  <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                  <div>
+                    <h4 className="info-title pb-3 font-weight-bold">
+                      Distributed Technology
+                    </h4>
+                    <p className="text-center">
+                      Anybody who wants access to the ledger is able to see
+                      every transactions that has taken place. The blockchain
+                      program is run by millions of computers on the network,
+                      all running the same program. When a transaction takes
+                      place, it only ever happens once on the network, meaning
+                      there is no duplication. Every computer on the network has
+                      to verify a transaction before its accepted.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
+                    <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
                   </div>
-                  <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                  <div>
+                    <h4 className="info-title pb-3 font-weight-bold">
+                      The Immutable Ledger
+                    </h4>
+                    <p className="text-center">
+                      This the most powerful aspect of the blockchain. Once
+                      there is any changes to the ledger, it is permanent. Any
+                      attempts to change the ledger will result in the network
+                      canceling the attempt. If there was a previous mistake in
+                      a transaction, a new one has to be issued as the old one
+                      can not be changed. The old one is still viewable as it is
+                      forever public on the chain.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
+                    <FontAwesomeIcon icon={faFileContract}></FontAwesomeIcon>
                   </div>
-                  <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                  <div>
+                    <h4 className="info-title pb-3 font-weight-bold">
+                      Smart Contracts
+                    </h4>
+                    <p className="text-center">
+                      Smart contracts are essentiality a set of rules stored on
+                      the blockchain that are executed automatically. These
+                      contracts are how people, companies, and organizations
+                      communicate with the blockchain. They are written in a
+                      specific programming language that allow complex tasks to
+                      take place. These smart contracts are what allow the
+                      highly advanced applications of the blockchain to be
+                      possible.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="section bg-info text-center">
+        <div className="section landing-section bg-info" id="how">
           <Container>
-            <h2 className="title">Uses of blockchain technology</h2>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="text-center title font-weight-bold">How does blockchain work?</h2>
+                <br />
+              </Col>
+            </Row>
+            <Row>
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/chain-start.png"
+                className="mx-auto"
+                alt=""
+              />
+            </Row>
+            <Row className="text-center mt-3">
+              <div className="mx-auto">
+                <Card style={{height: "15rem" }}>
+                  <CardBody>
+                    <div className="icon">
+                      <FontAwesomeIcon
+                        className="h1"
+                        icon={faCube}
+                      ></FontAwesomeIcon>
+                    </div>
+                    <CardTitle className="h3 font-weight-bold pb-3">
+                      Creation of the block
+                    </CardTitle>
+                    <CardText>
+                      When a transaction happens, the data of the transaction gets but into a "block". The data that are in the block
+                      can be any type of data as long it can be represented in some way 
+                    </CardText>
+                  </CardBody>
+                </Card>
+              </div>
+            </Row>
+            <Row>
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/chain-intermidiate.png"
+                className="mx-auto"
+                alt=""
+              />
+            </Row>
+            <Row className="mt-3 text-center">
+              <div className="mx-auto">
+                <Card className="" style={{height: "15rem" }}>
+                  <CardBody>
+                    <div className="icon">
+                      <FontAwesomeIcon
+                        className="h1"
+                        icon={faCubes}
+                      ></FontAwesomeIcon>
+                    </div>
+                    <CardTitle className="h3 font-weight-bold pb-3">
+                      Linking the blocks
+                    </CardTitle>
+                    <CardText>
+                      After a block is created, it is then linked the previous link, and then later linked to the block in front of it. Each 
+                      blocks contains the exact time and transactions that took place. 
+                    </CardText>
+                  </CardBody>
+                </Card>
+              </div>
+            </Row>
+            <Row>
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/chain-intermidiate.png"
+                className="mx-auto"
+                alt=""
+              />
+            </Row>
+            <Row className="mt-3 text-center">
+              <div className="info mx-auto">
+                <Card className="" style={{height: "15rem" }}>
+                  <CardBody>
+                    <div className="icon">
+                      <img
+                        src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-blockchain-fintech-becris-lineal-becris.png"
+                        alt=""
+                      />
+                    </div>
+                    <CardTitle className="h3 font-weight-bold pb-3">
+                      The chain is formed
+                    </CardTitle>
+                    <CardText>
+                      The continuous and constant action of linking blocks creates the blockchain. As the blockchain grows, it gets even more security as
+                      each block is a layer of verification and tamper protection. 
+                    </CardText>
+                  </CardBody>
+                </Card>
+              </div>
+            </Row>
+            <Row>
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/chain-end.png"
+                className="mx-auto"
+                alt=""
+              />
+            </Row>
+          </Container>
+        </div>
+        <div className="section text-center" id="uses">
+          <Container>
+            <h2 className="title font-weight-bold">Uses of blockchain technology</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/cryptocoin.bmp").default}
-                      />
+                      <img src="https://img.icons8.com/fluency/96/000000/ethereum.png" alt=''/>
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Cryptocurreny</CardTitle>
+                        <CardTitle tag="h4" className='font-weight-bold'>Cryptocurrency</CardTitle>
                         <h6 className="card-category">
                           Bitcoin, Ether, DaiCoin, Etc.
                         </h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
+                    <p className="text-center">
+                      Cryptocurrencies are the most popular use of the blockchain. Many people mistake cryptocurrencies as the block chain, but in truth,
+                      the blockchain is what enables cryptocurrencies. Cryptocurrencies are used like regular currency, however, their prices fluctuate more than
+                      physical currency. 
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/trade.bmp").default}
-                      />
+                    <img src="https://img.icons8.com/nolan/96/bank-building.png" alt=''/>
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Decentralized Finance</CardTitle>
-                        <h6 className="card-category">Banking, Etc.</h6>
+                        <CardTitle tag="h4" className='font-weight-bold'>Decentralized Finance</CardTitle>
+                        <h6 className="card-category">Banking, Exchanges, Investing, Etc.</h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
+                    <p className="text-center">
+                      As one would need a bank to store their wealth, cryptocurrencies can be stored in decentralized applications. These applications
+                      act like an actual bank with the ability to get loans and earn interest. All their actions are public on the blockchain so users
+                      can see and verify how their money is being handled. 
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/supplychain.bmp").default}
-                      />
+                    <img src="https://img.icons8.com/nolan/96/supplier.png" alt=''/>
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Supply Chain</CardTitle>
+                        <CardTitle tag="h4" className='font-weight-bold'>Supply Chain</CardTitle>
                         <h6 className="card-category">
                           Connecting suppliers worldwide
                         </h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                    <p className="text-center">
+                      The blockchain does a great job of tracking history. Due to his fact, many industries are using the blockchain
+                      to know where supplies came from and when. Using this information, they can verify the quality of products and have proof
+                      of purchase in case of a dispute with a supplier. 
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="section landing-section">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">How does blockchain work?</h2>
-                <br />
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4">
-                <div>
-                  <Card className='section-gray'>
-                    <CardBody>
-                      <CardTitle>Card title</CardTitle>
-                      <CardSubtitle className="mb-2 text-muted">
-                        Card subtitle
-                      </CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <CardLink href="/#/">Card link</CardLink>
-                      <CardLink href="/#/">Another link</CardLink>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col md="4">
-                <div>
-                  <Card className="section-gray">
-                    <CardBody>
-                      <CardTitle>Card title</CardTitle>
-                      <CardSubtitle className="mb-2 text-muted">
-                        Card subtitle
-                      </CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <CardLink href="/#/">Card link</CardLink>
-                      <CardLink href="/#/">Another link</CardLink>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-              <Col md="4">
-                <div className="info">
-                  <Card className='section-gray'>
-                    <CardBody>
-                      <CardTitle>Card title</CardTitle>
-                      <CardSubtitle className="mb-2 text-muted">
-                        Card subtitle
-                      </CardSubtitle>
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
-                      <CardLink href="/#/">Card link</CardLink>
-                      <CardLink href="/#/">Another link</CardLink>
-                    </CardBody>
-                  </Card>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="section bg-info landing-section">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">History of the blockchain</h2>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="section landing-section">
+
+        {/* <div className="section landing-section">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
@@ -397,7 +342,7 @@ function Index() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
       </div>
       <DemoFooter />
     </>

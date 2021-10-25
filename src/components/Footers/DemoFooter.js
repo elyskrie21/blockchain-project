@@ -31,7 +31,7 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href=""
+                  href="https://github.com/elyskrie21"
                   target="_blank"
                 >
                   My github
@@ -39,18 +39,10 @@ function DemoFooter() {
               </li>
               <li>
                 <a
-                  href=""
+                  href="https://www.youtube.com/channel/UCmTVHadIAKAjhnzO7tBu8CA/featured"
                   target="_blank"
                 >
                   Follow my Youtube
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                >
-                  Licenses
                 </a>
               </li>
             </ul>

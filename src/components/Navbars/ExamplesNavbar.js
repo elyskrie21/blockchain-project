@@ -96,10 +96,26 @@ function ExamplesNavbar() {
           <Nav navbar>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
+                href="#what"
+                target=""
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+              What is blockchain 
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="#how"
+                target=""
+              >
+              How does blockchain work
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="#uses"
+                target=""
+              >
+              Uses of the blockchain
               </NavLink>
             </NavItem>
           </Nav>

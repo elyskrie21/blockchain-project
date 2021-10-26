@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -45,7 +27,7 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/blockchain-header.bmp").default + ")",
+            "url(" + require("assets/img/header.bmp").default + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -54,19 +36,9 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Blockchain Technology</h1>
-            <h3>The newest technology that is changing the world</h3>
+            <h1 className='font-weight-bold'>Blockchain Technology</h1>
+            <h3 className='font-weight-bold'>The newest technology that is changing the world</h3>
             <br />
-            <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button>
           </div>
         </Container>
       </div>

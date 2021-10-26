@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -23,7 +5,6 @@ import {
   Button,
   Card,
   CardBody,
-  CardFooter,
   CardTitle,
   Container,
   Row,
@@ -68,9 +49,9 @@ function Index() {
                 </h2>
                 <h5>
                   The blockchain is simply a public, immutable ledger that is
-                  used fo;r processing, tracking, and managing assets. This
+                  used for processing, tracking, and managing assets. These
                   assets can be digital (music, pictures, copyrights, etc.), or
-                  than can be physical (houses, cars, clothes, etc.). This
+                  they can be physical (houses, cars, clothes, etc.). This
                   public ledger is highly secure due to it being immutable and
                   the use of advanced cryptography.
                 </h5>
@@ -184,7 +165,7 @@ function Index() {
                       Creation of the block
                     </CardTitle>
                     <CardText>
-                      When a transaction happens, the data of the transaction gets but into a "block". The data that are in the block
+                      When a transaction happens, the data of the transaction gets but into a "block". The data that is in the block
                       can be any type of data as long it can be represented in some way 
                     </CardText>
                   </CardBody>
@@ -240,7 +221,7 @@ function Index() {
                       The chain is formed
                     </CardTitle>
                     <CardText>
-                      The continuous and constant action of linking blocks creates the blockchain. As the blockchain grows, it gets even more security as
+                      The continuous and constant action of linking blocks creates the blockchain. As the blockchain grows, it gets even more secure as
                       each block is a layer of verification and tamper protection. 
                     </CardText>
                   </CardBody>
@@ -333,16 +314,73 @@ function Index() {
             </Row>
           </Container>
         </div>
-
-        {/* <div className="section landing-section">
+        <div className="section bg-info text-center" id='quotes'>
           <Container>
+            <h2 className="title font-weight-bold">Quotes from professionals</h2>
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Real Examples (created by me)</h2>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img src='https://images.huffingtonpost.com/2017-01-05-1483625642-9743081-13419266_878318540481_5832556764925168795_n.jpg' alt=''></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author">
+                        <CardTitle tag="h4" className='font-weight-bold'>Don & Alex Tapscott</CardTitle>
+                        <h6 className="card-category">Experts in blockchain technology</h6>
+                      </div>
+                    </a>
+                    <p className="text-center">
+                    “The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.”
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img src='https://informationcradle.com/wp-content/uploads/2020/05/Patrick-Byrne-Photo.jpg' alt=''></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author">
+                        <CardTitle tag="h4" className='font-weight-bold'>Patrick M. Byrne</CardTitle>
+                        <h6 className="card-category">Former CEO of Overstock.com</h6>
+                      </div>
+                    </a>
+                    <p className="text-center">
+                    “There is an opportunity to recreate the financial world as we know it in the parallel universe that is the blockchain. We are writing rules for this whole new universe.”
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img src='https://d.ibtimes.co.uk/en/full/1477489/wm.gif' alt=''></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author">
+                        <CardTitle tag="h4" className='font-weight-bold'>William Mougayar</CardTitle>
+                        <h6 className="card-category">Author of The Business Blockchain</h6>
+                      </div>
+                    </a>
+                    <p className="text-center">
+                    “You have to think of the blockchain as a new utility. It is a new utility network for moving value, moving assets.”
+                    </p>
+                  </CardBody>\
+                </Card>
               </Col>
             </Row>
           </Container>
-        </div> */}
+        </div>
       </div>
       <DemoFooter />
     </>

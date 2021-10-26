@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 /*eslint-disable*/
 import React from "react";
 
@@ -45,11 +27,19 @@ function DemoFooter() {
                   Follow my Youtube
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1GnlXU-ZI-__QUTv4eqK9jQV9yn7UadreSjbseNuXxEs/edit?usp=sharing"
+                  target="_blank"
+                >
+                  Works Cited
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="credits ml-auto">
             <span className="copyright">
-              © {new Date().getFullYear()}, coded by Elyse Kriegel
+              © {new Date().getFullYear()}, by Elyse Kriegel
             </span>
           </div>
         </Row>
